@@ -1,0 +1,78 @@
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: .75rem;
+}
+
+.icons {
+    height: 30px;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    /* Light gray for a clean look */
+    padding: 20px 0;
+    /* Add vertical padding for spacing */
+    display: flex;
+    justify-content: space-between;
+    /* Adjust alignment */
+    flex-wrap: wrap;
+    /* Ensure it adjusts on smaller screens */
+}
+
+.footer p,
+.footer h5,
+.footer a {
+    color: #6c757d;
+    /* Muted text color */
+    font-size: 14px;
+}
+
+.footer a:hover {
+    color: #007bff;
+    /* Accent color on hover */
+    text-decoration: underline;
+}
+
+.footer .row {
+    gap: 20px;
+}
+
+/* Ensure icons are spaced evenly */
+.footer .list-unstyled {
+    display: flex;
+    gap: 15px;
+    /* Space between icons */
+    margin: 0;
+    /* Remove default list margin */
+    padding: 0;
+    /* Remove default list padding */
+    align-items: center;
+    /* Vertically center the icons */
+    list-style: none;
+    /* Remove bullets */
+}
+
+/* Add hover effects */
+.footer .list-unstyled li a img {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer .list-unstyled li a img:hover {
+    transform: scale(1.2);
+    /* Enlarge slightly on hover */
+    opacity: 0.8;
+    /* Add subtle fade effect */
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .row {
+        gap: 10px;
+    }
+}
